@@ -1,6 +1,6 @@
-# Sensyne
+# Sensyne
 
-## Start API
+## Start API
 
 It will also run DB migration from `docker-entrypoint.sh`
 
@@ -8,13 +8,13 @@ It will also run DB migration from `docker-entrypoint.sh`
 $ make up
 ```
 
-## Run linter
+## Run linter
 
 ```
 $ make lint
 ```
 
-## Notes
+## Notes
 
 - Script `wait-for-it.sh` is opensource, so I just use it
 - I did not add the OpenAPI (Flasgger), just did not have the time
@@ -25,3 +25,4 @@ $ make lint
 - Long time I do not use flask also, lately have been working with aws chalice
 - Sorry, I did not write the integration tests because of the time I spent discording with the API :),
 you can find my tests and other projects in my gitlab (opensource). 
+- Postman script all green
