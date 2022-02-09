@@ -1,0 +1,36 @@
+version: "3.7"
+
+services:
+  sensyne:
+    container_name: sensyne
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: sh -c "./docker-entrypoint.sh && python3 app.py"
+    volumes:
+      - .:/app
+    ports:
+      - "5000:5000"
+    environment:
+      APP_SETTINGS: "development"
+      DATABASE_URL: "postgresql://postgres:postgres@db/sensyne"
+      DB_USER: postgres
+      DB_HOST: db
+      DB_NAME: sensyne
+      DB_PORT: 5432
+      DB_PASSWORD: postgres
+    depends_on:
+      - db
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: sensyne
+
+  linter:
+    build:
+      context: .
+      dockerfile: Dockerfile

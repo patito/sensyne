@@ -1,0 +1,18 @@
+# This file is used by pip to install required python packages
+# Virtual env: python3 -m venv venv
+# Activate:    source venv/bin/activate
+# Usage:       pip install -r requirements.txt
+
+# Web Framework
+Flask==2.0.2
+Flask-RESTful==0.3.9
+Flask-SQLAlchemy==2.5.1
+
+# Migration
+Flask-Migrate==3.1.0
+
+# Postgres
+psycopg2-binary==2.9.1
+
+# Mypy
+mypy==0.931

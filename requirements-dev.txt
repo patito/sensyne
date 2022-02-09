@@ -1,0 +1,11 @@
+-r requirements.txt
+
+# Tests
+pytest==7.0.0
+
+# Lint
+flake8==4.0.1
+black==22.1.0
+
+# Analyzes Security Issues
+bandit==1.7.2
