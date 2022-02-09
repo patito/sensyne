@@ -1,6 +1,6 @@
-# Sensyne
+# Sensyne
 
-## Start API
+## Start API
 
 It will also run DB migration from `docker-entrypoint.sh`
 
@@ -8,7 +8,7 @@ It will also run DB migration from `docker-entrypoint.sh`
 # make up
 ```
 
-## Notes
+## Notes
 
 - Script `wait-for-it.sh` is opensource, so I just use it
 - I did not add the OpenAPI (Flasgger), just did not have the time
