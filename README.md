@@ -5,7 +5,13 @@
 It will also run DB migration from `docker-entrypoint.sh`
 
 ```
-# make up
+$ make up
+```
+
+## Run linter
+
+```
+$ make lint
 ```
 
 ## Notes
